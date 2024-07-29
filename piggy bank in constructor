@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.*;
+
+class AddAmount {
+    int amt = 50, add, add2, money;
+    AddAmount() {
+        money = 0; // Initialize money to 0
+        add = amt + money;
+        System.out.println("Piggy Bank Amount: " + add + "$");
+    }
+    AddAmount(int s) {
+        money = s; // Assign the parameter to money
+        add2 = amt + money;
+        System.out.println("Piggy Bank Amount: " + add2 + "$");
+    }
+}
+
+class Amount {
+    public static void main(String[] args) {
+        // Corrected instantiation of AddAmount objects
+        AddAmount n = new AddAmount();
+        AddAmount m = new AddAmount(500);
+    }
+}
