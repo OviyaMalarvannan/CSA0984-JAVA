@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class Math {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.print("Given Number: ");
+        double number = s.nextDouble();
+        double square = number * number;
+        double cube = number * number * number;
+        System.out.println("Square Number: " + square);
+        System.out.println("Cube Number: " + cube);
+    }
+}
